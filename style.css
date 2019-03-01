@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'eurostile';
+  src: url(recursos/eurostile.TTF);
+}
+
+@font-face {
+  font-family: 'sourceSans';
+  src: url(recursos/SourceSansPro-Regular.ttf);
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black));
+  background-image: linear-gradient(black);
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  z-index: 50;
+}
+
+.header {
+  position: fixed;
+  height: 300px;
+  overflow: hidden;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo img {
+  margin: 0;
+  padding: 0;
+  max-width: 200px;
+  margin: 10px 0;
+  margin-left: 150px;
+}
+
+.header__li {
+  display: inline-block;
+}
+
+.header__li:hover {
+  text-decoration: underline;
+}
+
+.header__a {
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.header__a a {
+  font-family: 'sourceSans';
+  margin-right: 25px;
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  z-index: 4;
+}
+
+.seccion__bg {
+  position: fixed;
+  margin-top: 70px;
+  height: 1100px;
+  background-size: cover;
+  width: 100%;
+  background-image: url(recursos/Recurso2.png);
+}
+
+.seccion__imagen {
+  position: fixed;
+  margin-top: 75px;
+}
+
+.seccion__intro {
+  background: #D38217;
+  height: 950px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seccion__intro img {
+  margin-top: 140px;
+  max-height: 600px;
+  z-index: 10;
+}
+
+.seccion__intro h1 {
+  font-family: 'eurostile';
+  text-align: center;
+  color: black;
+  font-size: 80px;
+  margin-top: 200px;
+  margin-left: 120px;
+  margin-right: 100px;
+  z-index: 10;
+}
+
+.seccion__acerca {
+  background: red;
+  height: 950px;
+}
+
+.seccion__galeria {
+  background: purple;
+  height: 950px;
+}
+/*# sourceMappingURL=style.css.map */
